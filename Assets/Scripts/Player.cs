@@ -1,15 +1,22 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
+    public static Player instance;
     public bool canMove = true;
-    public bool canJump = true;
+    public bool isGrounded = true;
     public float speed = 5f;
     public float jumpForce = 250f;
-    public Scene nextScene;
+    public int currScene;
     private Rigidbody2D rb;
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -18,20 +25,16 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+
         if (canMove)
         {
             transform.Translate(horizontalInput * speed * Time.deltaTime * Vector3.right);
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && canMove && canJump)
+        if (Input.GetKeyDown(KeyCode.Space) && canMove && isGrounded)
         {
             rb.AddForce(new Vector2(rb.linearVelocity.x, jumpForce));
-        }
-
-        if(transform.position.x > CameraControl.instance.endingCoords + 10f)
-        {
-            SceneManager.LoadScene(0);
         }
     }
     
@@ -39,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            canJump = false;
+            isGrounded = true;
         }
     }
 
@@ -48,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            canJump = true;
+            isGrounded = false;
         }
     }
 }

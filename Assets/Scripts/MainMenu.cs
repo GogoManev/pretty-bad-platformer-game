@@ -8,6 +8,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void DeleteData()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
     public void QuitGame()
     {
         Application.Quit();
