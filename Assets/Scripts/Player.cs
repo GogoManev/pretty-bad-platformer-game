@@ -19,7 +19,15 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Start()
@@ -69,8 +77,6 @@ public class Player : MonoBehaviour
     {
         health -= damage;
         healthBar.value = health;
-
-        Debug.Log("Player took damage! Current HP: " + health);
 
         if (health <= 0)
         {

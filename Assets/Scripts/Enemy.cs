@@ -1,17 +1,25 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class muncho : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public int initial_health = 100;
     public int current_health;
     public GameObject tspmo;
-    public AudioSource source;
+    public Transform enemy;
     public Slider healthbar;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private float enemyX;
+    
     void Start()
     {
+        enemyX = enemy.transform.position.x;
         current_health = initial_health;
+    }
+
+    private void Update()
+    {
+        enemyX -= 0.001f;
+        enemy.transform.position = new Vector2(enemyX, enemy.transform.position.y);
     }
 
     void OnCollisionEnter2D(UnityEngine.Collision2D collision)
@@ -19,7 +27,6 @@ public class muncho : MonoBehaviour
       if (collision.gameObject.CompareTag("Player"))
         {
             TakeDamage(10);
-            source.Play();
         }
     }
 
@@ -28,7 +35,7 @@ public class muncho : MonoBehaviour
         current_health -= damage;
         Debug.Log("Enemy took damage! Current HP: " + current_health);
         healthbar.value = current_health;
-        if (current_health < 0)
+        if (current_health <= 0)
         {
             Die();
         }

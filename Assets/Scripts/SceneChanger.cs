@@ -4,34 +4,26 @@ using UnityEngine.SceneManagement;
 public class SceneChanger1 : MonoBehaviour
 {
     public int scene;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float x;
+    public float y;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Player.instance.transform.position.x < CameraControl.instance.beginningCoords + 20f)
+        if (collision.CompareTag("Player"))
         {
-            Player.instance.transform.position = new Vector3
-                (collision.transform.position.x - 1f, collision.transform.position.y, Player.instance.transform.position.z);
+            SceneManager.sceneLoaded += OnSceneLoaded;
+            SceneManager.LoadScene(scene);
         }
-        else
-        {
-            Player.instance.transform.position = new Vector3
-                (collision.transform.position.x + 1f, collision.transform.position.y, Player.instance.transform.position.z);
-        }
-        {
+    }
 
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        Player.instance.transform.position = new Vector2(x, y);
+        CameraControl cameraFollow = Camera.main.GetComponent<CameraControl>();
+        if (cameraFollow != null)
+        {
+            cameraFollow.SetTarget(Player.instance.transform);
         }
-
-        SceneManager.LoadScene(scene);
     }
 }

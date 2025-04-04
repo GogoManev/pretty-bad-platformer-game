@@ -13,23 +13,15 @@ public class CameraControl : MonoBehaviour
         instance = this;
     }
 
-    void Update()
-    {
-
-    }
     private void LateUpdate()
     {
-        transform.position = target.position + offset;
+        Vector3 position = target.position + offset;
+        position.x = Mathf.Clamp(position.x, beginningCoords, endingCoords);
+        transform.position = new Vector3(position.x, position.y, transform.position.z);
+    }
 
-
-        if (transform.position.x < beginningCoords)
-        {
-            transform.position = new Vector3(beginningCoords, transform.position.y, transform.position.z);
-        }
-
-        if(transform.position.x > endingCoords)
-        {
-            transform.position = new Vector3(endingCoords, transform.position.y, transform.position.z);
-        }
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
     }
 }
