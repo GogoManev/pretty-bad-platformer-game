@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,6 +12,10 @@ public class Player : MonoBehaviour
     public float speed = 5f;
     public float jumpForce = 250f;
     public int currScene;
+    public int health;
+    public Slider healthBar;
+    public GameObject tspmo;
+
     private Rigidbody2D rb;
     private void Awake()
     {
@@ -44,6 +49,10 @@ public class Player : MonoBehaviour
         {
             isGrounded = true;
         }
+        else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(10);
+        }
     }
 
 
@@ -53,5 +62,24 @@ public class Player : MonoBehaviour
         {
             isGrounded = false;
         }
+    }
+
+
+     public void TakeDamage(int damage)
+    {
+        health -= damage;
+        healthBar.value = health;
+
+        Debug.Log("Player took damage! Current HP: " + health);
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        tspmo.SetActive(false);
     }
 }

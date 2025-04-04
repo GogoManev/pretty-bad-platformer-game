@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class muncho : MonoBehaviour
 {
@@ -6,22 +7,36 @@ public class muncho : MonoBehaviour
     public int current_health;
     public GameObject tspmo;
     public AudioSource source;
+    public Slider healthbar;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         current_health = initial_health;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
-        if (current_health < 0)
+      if (collision.gameObject.CompareTag("Player"))
         {
-            tspmo.SetActive(false);
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
+            TakeDamage(10);
             source.Play();
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        current_health -= damage;
+        Debug.Log("Enemy took damage! Current HP: " + current_health);
+        healthbar.value = current_health;
+        if (current_health < 0)
+        {
+            Die();
+        }
+
+    }
+
+    void Die()
+    {
+        tspmo.SetActive(false);
     }
 }

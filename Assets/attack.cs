@@ -11,6 +11,7 @@ public class attack : MonoBehaviour
             Player player = other.GetComponent<Player>();
             if (player != null)
             {
+
                 player.TakeDamage(damageAmount);
             }
         }
