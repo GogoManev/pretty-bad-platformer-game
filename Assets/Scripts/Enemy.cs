@@ -5,9 +5,11 @@ public class Enemy : MonoBehaviour
 {
     public int initial_health = 100;
     public int current_health;
+    public float speed;
+    public int playerDamage;
     public GameObject tspmo;
     public Transform enemy;
-    public Slider healthbar;
+    //public Slider healthbar;
     private float enemyX;
     
     void Start()
@@ -18,7 +20,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        enemyX -= 0.001f;
+        enemyX += speed;
         enemy.transform.position = new Vector2(enemyX, enemy.transform.position.y);
     }
 
@@ -26,7 +28,8 @@ public class Enemy : MonoBehaviour
     {
       if (collision.gameObject.CompareTag("Player"))
         {
-            TakeDamage(10);
+            Player.instance.TakeDamage(playerDamage);
+            Player.instance.transform.position = new Vector2(Player.instance.transform.position.x - 1f, Player.instance.transform.position.y);
         }
     }
 
@@ -34,7 +37,7 @@ public class Enemy : MonoBehaviour
     {
         current_health -= damage;
         Debug.Log("Enemy took damage! Current HP: " + current_health);
-        healthbar.value = current_health;
+        //healthbar.value = current_health;
         if (current_health <= 0)
         {
             Die();

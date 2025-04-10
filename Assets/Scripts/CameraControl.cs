@@ -4,7 +4,6 @@ public class CameraControl : MonoBehaviour
 {
     public static CameraControl instance;
     public Transform target;
-    public GameObject Player;
     public float beginningCoords;
     public float endingCoords;
     public Vector3 offset = new(0, 1f, -0.5f);

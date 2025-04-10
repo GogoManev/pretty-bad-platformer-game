@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
     public bool isGrounded = true;
     public float speed = 5f;
     public float jumpForce = 250f;
-    public int currScene;
     public int health;
     public Slider healthBar;
     public GameObject tspmo;
@@ -56,10 +55,6 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-        }
-        else if (collision.gameObject.CompareTag("Enemy"))
-        {
-            TakeDamage(10);
         }
     }
 
