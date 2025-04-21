@@ -1,8 +1,5 @@
-using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class Player : MonoBehaviour
 {
@@ -14,6 +11,7 @@ public class Player : MonoBehaviour
     public int health;
     public Slider healthBar;
     public GameObject tspmo;
+    public GameObject gameOverScreen;
 
     private Rigidbody2D rb;
     private Vector3 originalScale;
@@ -42,10 +40,12 @@ public class Player : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        if (canMove)
+        if(health > 0)
         {
-            transform.Translate(horizontalInput * speed * Time.deltaTime * Vector3.right);
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            if (canMove)
+            {
+                transform.Translate(horizontalInput * speed * Time.deltaTime * Vector3.right);
+                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z); // Face left
             }
@@ -56,10 +56,12 @@ public class Player : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && canMove && isGrounded)
-        {
-            rb.AddForce(new Vector2(rb.linearVelocity.x, jumpForce));
+            if (Input.GetKeyDown(KeyCode.Space) && canMove && isGrounded)
+            {
+                rb.AddForce(new Vector2(rb.linearVelocity.x, jumpForce));
+            }
         }
+        
     }
     
     void OnCollisionEnter2D(UnityEngine.Collision2D collision)
@@ -93,12 +95,6 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        tspmo.SetActive(false);
+        gameOverScreen.SetActive(true);
     }
-
-  
-
 }
-
-
-
