@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
     public GameObject tspmo;
 
     private Rigidbody2D rb;
+    private Vector3 originalScale;
+
+
     private void Awake()
     {
         if (instance == null)
@@ -31,6 +34,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        originalScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
     }
     void Update()
@@ -41,6 +45,14 @@ public class Player : MonoBehaviour
         if (canMove)
         {
             transform.Translate(horizontalInput * speed * Time.deltaTime * Vector3.right);
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z); // Face left
+            }
+            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z); // Face right
+            }
         }
 
 
@@ -83,4 +95,10 @@ public class Player : MonoBehaviour
     {
         tspmo.SetActive(false);
     }
+
+  
+
 }
+
+
+
