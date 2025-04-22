@@ -1,102 +1,3 @@
-/*using UnityEngine;
-using System.Collections;   
-
-public class InventoryManagment : MonoBehaviour
-{
-
-    public GameObject player;
-    public GameObject inv;
-    public GameObject itemdrop;
-    public int slot;
-    public GameObject Item1;
-    public GameObject Item2; 
-    public GameObject Item3;
-    //public GameObject[] Items;
-    
-
-    void DropItem()
-    {
-        //oprawi mecha!!!!!!!!!!!!!!!!
-        if (slot == 1)
-        {
-            Item1.transform.parent = itemdrop.transform;
-        }
-        else if (slot == 2)
-        {
-            Item2.transform.parent = itemdrop.transform;
-        }
-        else if (slot == 3)
-        {
-            Item3.transform.parent = itemdrop.transform;
-        }
-    }
-
-    void PickUpItem()
-    {
-        
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        slot = 1;
-        int i = 1;
-        foreach (Transform child in transform)
-        {
-            //Items[i] = child;
-            if (i == 1)
-                Item1 = child.gameObject;
-            if (i == 2)
-                Item2 = child.gameObject;
-            if (i == 3)
-                Item3 = child.gameObject;
-            i++;
-        }
-        Item1.SetActive(true);
-        Item2.SetActive(false);
-        Item3.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown("1"))
-        {
-            slot = 1;
-            if (Item1)
-                Item1.SetActive(true);
-            if (Item2)
-                Item2.SetActive(false);
-            if (Item3)
-                Item3.SetActive(false);
-        }
-        if (Input.GetKeyDown("2"))
-        {
-            slot = 2;
-            if (Item2)
-                Item2.SetActive(true);
-            if (Item1)
-                Item1.SetActive(false);
-            if (Item3)
-                Item3.SetActive(false);
-        }
-        if (Input.GetKeyDown("3"))
-        {
-            slot = 1;
-            if (Item3)
-                Item3.SetActive(true);
-            if (Item1)
-                Item1.SetActive(false);
-            if (Item2)
-                Item2.SetActive(false);
-        }
-        if(Input.GetKey("q"))
-        {
-            DropItem();
-        }
-    }
-}*/
-
 using UnityEngine;
 
 public class InventoryManagment : MonoBehaviour
@@ -117,50 +18,41 @@ public class InventoryManagment : MonoBehaviour
             items[index] = null;
         }
     }
-
     void PickUpItem()
-    {/*
-        if (player != null && player.transform.position.x <= 63 && player.transform.position.x >= 54)
-        {
-            showButton();
-        }
-        public GameObject player;
-    public GameObject button;
-
-    private void Start()
     {
-        button.SetActive(false);
-    }
+    Transform nearestItem = null;
+    float minDistance = Mathf.Infinity;
+    float maxDistance = 3.0f;
 
-    // Update is called once per frame
-    void Update()
+    foreach (Transform child in itemdrop.transform)
     {
-        button.SetActive(false);
-        if (player != null && player.transform.position.x <= 63 && player.transform.position.x >= 54)
+        float distance = Vector3.Distance(player.transform.position, child.position);
+        if (distance < maxDistance)
         {
-            showButton();
+            minDistance = distance;
+            nearestItem = child;
         }
     }
 
-    public void showButton()
+    if (nearestItem != null)
     {
-        button.SetActive(true);
-    }*/
-        //int i = 0;
-        foreach (Transform child in itemdrop.transform)
+        for (int i = 0; i < items.Length; i++)
         {
-            if (player != null && player.transform.position.x <= child.transform.position.x - 5.0f && player.transform.position.x >= child.transform.position.x + 5.0f)
+            if (items[i] == null)
             {
-                if(Input.GetKeyDown("e"))
-                {
-                    //put it in argh kod
-                    Debug.Log("sigma");
-                }
+                items[i] = nearestItem.gameObject;
+                items[i].transform.parent = this.transform;
+                items[i].SetActive(i == slot - 1);
+                return;
             }
         }
-    }
 
-    void Start()
+        DropItem();
+        PickUpItem(); 
+    }
+}
+
+void Start()
     {
         slot = 1;
         int i = 0;
@@ -169,7 +61,7 @@ public class InventoryManagment : MonoBehaviour
             if (i < items.Length)
             {
                 items[i] = child.gameObject;
-                items[i].SetActive(i == 0); // Activate first item, deactivate others
+                items[i].SetActive(i == 0);
                 i++;
             }
         }
@@ -194,6 +86,9 @@ public class InventoryManagment : MonoBehaviour
         {
             DropItem();
         }
-        PickUpItem();
+        if(Input.GetKeyDown("e"))
+        {
+            PickUpItem();
+        }
     }
 }
