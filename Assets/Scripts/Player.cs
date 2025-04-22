@@ -35,6 +35,12 @@ public class Player : MonoBehaviour
     {
         originalScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
+
+        if(GameManager.instance.isLoaded == true)
+        {
+            Player.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), 0);
+        }
+        
     }
     void Update()
     {
@@ -94,10 +100,18 @@ public class Player : MonoBehaviour
         healthBar.value = health;
     }
 
-    void Die()
+    private void Die()
     {
         canMove = false;
         isGrounded = false;
         gameOverScreen.SetActive(true);
+    }
+
+    public void PauseGame()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape)) 
+        {
+
+        }
     }
 }

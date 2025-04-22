@@ -12,6 +12,7 @@ public class SceneChanger1 : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            GameManager.instance.isLoaded = false;
             SceneManager.sceneLoaded += OnSceneLoaded;
             SceneManager.LoadScene(scene);
         }

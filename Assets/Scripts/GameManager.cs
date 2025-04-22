@@ -3,8 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private Player player;
+    public static GameManager instance;
+    public bool isLoaded = false;
+    public void Awake()
+    {
+        instance = this;
+    }
 
     public void SaveGame()
     {
@@ -16,6 +20,7 @@ public class GameManager : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene(PlayerPrefs.GetInt("CurrentScene"));
+        isLoaded = true;
         Player.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), 0);
     }
     

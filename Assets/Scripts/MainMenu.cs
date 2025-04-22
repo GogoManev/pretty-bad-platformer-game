@@ -10,6 +10,9 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerPrefs.SetInt("CurrentScene", 1);
+        PlayerPrefs.SetFloat("X", 0.5f);
+        PlayerPrefs.SetFloat("Y", 0f);
     }
 
     public void DeleteData()
