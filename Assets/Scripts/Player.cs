@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
     }
 
@@ -61,7 +62,12 @@ public class Player : MonoBehaviour
                 rb.AddForce(new Vector2(rb.linearVelocity.x, jumpForce));
             }
         }
-        
+
+        if (health <= 0)
+        {
+            Die();
+        }
+
     }
     
     void OnCollisionEnter2D(UnityEngine.Collision2D collision)
@@ -82,19 +88,16 @@ public class Player : MonoBehaviour
     }
 
 
-     public void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
         healthBar.value = health;
-
-        if (health <= 0)
-        {
-            Die();
-        }
     }
 
     void Die()
     {
+        canMove = false;
+        isGrounded = false;
         gameOverScreen.SetActive(true);
     }
 }
