@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
     }
 
@@ -34,6 +35,12 @@ public class Player : MonoBehaviour
     {
         originalScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
+
+        if(GameManager.instance.isLoaded == true)
+        {
+            Player.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), 0);
+        }
+        
     }
     void Update()
     {
@@ -61,7 +68,12 @@ public class Player : MonoBehaviour
                 rb.AddForce(new Vector2(rb.linearVelocity.x, jumpForce));
             }
         }
-        
+
+        if (health <= 0)
+        {
+            Die();
+        }
+
     }
     
     void OnCollisionEnter2D(UnityEngine.Collision2D collision)
@@ -82,19 +94,24 @@ public class Player : MonoBehaviour
     }
 
 
-     public void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
         healthBar.value = health;
-
-        if (health <= 0)
-        {
-            Die();
-        }
     }
 
-    void Die()
+    private void Die()
     {
+        canMove = false;
+        isGrounded = false;
         gameOverScreen.SetActive(true);
+    }
+
+    public void PauseGame()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape)) 
+        {
+
+        }
     }
 }
