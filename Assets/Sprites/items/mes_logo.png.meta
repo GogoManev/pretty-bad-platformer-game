@@ -734,7 +734,32 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mes_logo_0: -1492635644631629799
+      mes_logo_1: -4072967837253608290
+      mes_logo_10: 3885523755483316242
+      mes_logo_11: -3965433655456749550
+      mes_logo_12: 4142211217965353814
+      mes_logo_13: -9003856174834361136
+      mes_logo_14: -403263649829701658
+      mes_logo_15: -1868384712412936945
+      mes_logo_16: -5300958602374099628
+      mes_logo_17: -7513841347271129483
+      mes_logo_18: -8767814517898600833
+      mes_logo_19: 4827328407150779369
+      mes_logo_2: 1544067758942360629
+      mes_logo_20: -1053336330117468079
+      mes_logo_21: -1210166370561676522
+      mes_logo_22: -2980832706725600513
+      mes_logo_23: -4538704894447323400
+      mes_logo_24: 6372342863820249536
+      mes_logo_3: -4007116185881059704
+      mes_logo_4: 1072294801103509929
+      mes_logo_5: -9062211686344068647
+      mes_logo_6: -7649348285188089750
+      mes_logo_7: 3152290461117732683
+      mes_logo_8: 1438453445426022865
+      mes_logo_9: -7837124166744119296
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
