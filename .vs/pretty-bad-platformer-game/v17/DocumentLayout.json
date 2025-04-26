@@ -1,45 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\",
+  "WorkspaceRootPath": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|c:\\users\\george\\pretty bad platformer game\\pretty-bad-platformer-game\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|c:\\users\\stefan\\desktop\\pretty-bad-platformer-game\\assets\\scripts\\click.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\click.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\assets\\scripts\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|c:\\users\\stefan\\desktop\\pretty-bad-platformer-game\\assets\\load.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\load.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\assets\\scripts\\inventorymanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|c:\\users\\stefan\\desktop\\pretty-bad-platformer-game\\assets\\scripts\\bossfollowplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bossfollowplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\inventorymanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventorymanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\assets\\scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\assets\\scripts\\lava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\lava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\assets\\scripts\\cameracontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\boss_damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boss_damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\camerafollow2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\camerafollow2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\cameracontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B02C9685-F162-A2CE-C0AB-8D686768CF1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,70 +78,130 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\Player.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
-              "ToolTip": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAdAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T11:52:31.522Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "shop.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\shop.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\shop.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\shop.cs",
+              "RelativeToolTip": "Assets\\Scripts\\shop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T17:37:46.961Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Title": "click.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\click.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\click.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\click.cs",
+              "RelativeToolTip": "Assets\\Scripts\\click.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T19:08:13.254Z",
+              "WhenOpened": "2025-04-26T22:31:36.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "shop.cs",
-              "DocumentMoniker": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\shop.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\shop.cs",
-              "ToolTip": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\shop.cs",
-              "RelativeToolTip": "Assets\\Scripts\\shop.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "Title": "load.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\load.cs",
+              "RelativeDocumentMoniker": "Assets\\load.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\load.cs",
+              "RelativeToolTip": "Assets\\load.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:37:46.961Z",
+              "WhenOpened": "2025-04-26T22:25:10.481Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "a.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\a.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\a.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\a.cs",
+              "RelativeToolTip": "Assets\\Scripts\\a.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:22:50.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "door.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\door.cs",
+              "RelativeDocumentMoniker": "Assets\\door.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\door.cs",
+              "RelativeToolTip": "Assets\\door.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T21:07:13.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "boss_damage.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\boss_damage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\boss_damage.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\boss_damage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\boss_damage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T19:59:41.941Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "InventoryManagment.cs",
-              "DocumentMoniker": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\InventoryManagment.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryManagment.cs",
-              "ToolTip": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\InventoryManagment.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InventoryManagment.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAiwBQAAAAVAAAA",
+              "Title": "BossFollowPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\BossFollowPlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BossFollowPlayer.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\BossFollowPlayer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BossFollowPlayer.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T19:07:42.6Z",
+              "WhenOpened": "2025-04-26T19:21:46.531Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "InventoryManagment.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\InventoryManagment.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryManagment.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\InventoryManagment.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventoryManagment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T19:07:42.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Lava.cs",
-              "DocumentMoniker": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\Lava.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\Lava.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lava.cs",
-              "ToolTip": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\Lava.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\Lava.cs",
               "RelativeToolTip": "Assets\\Scripts\\Lava.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T09:04:53.976Z"
             },
@@ -121,34 +209,69 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "SceneChanger.cs",
-              "DocumentMoniker": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\SceneChanger.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\SceneChanger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneChanger.cs",
-              "ToolTip": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\SceneChanger.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\SceneChanger.cs",
               "RelativeToolTip": "Assets\\Scripts\\SceneChanger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T18:45:35.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\MainMenu.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T18:45:21.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T18:45:21.751Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T14:40:20.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CameraFollow2D.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\CameraFollow2D.cs",
+              "RelativeDocumentMoniker": "Assets\\CameraFollow2D.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\CameraFollow2D.cs",
+              "RelativeToolTip": "Assets\\CameraFollow2D.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T19:55:07.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T19:08:13.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "CameraControl.cs",
-              "DocumentMoniker": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\CameraControl.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\CameraControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraControl.cs",
-              "ToolTip": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\CameraControl.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\CameraControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraControl.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -156,23 +279,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
-              "ToolTip": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T14:40:20.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "PlayerAttack.cs",
-              "DocumentMoniker": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\PlayerAttack.cs",
+              "DocumentMoniker": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAttack.cs",
-              "ToolTip": "C:\\Users\\George\\pretty bad platformer game\\pretty-bad-platformer-game\\Assets\\Scripts\\PlayerAttack.cs",
+              "ToolTip": "C:\\Users\\Stefan\\Desktop\\pretty-bad-platformer-game\\Assets\\Scripts\\PlayerAttack.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerAttack.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwBsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
