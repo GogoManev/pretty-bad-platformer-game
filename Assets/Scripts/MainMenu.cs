@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         Destroy(Player.instance);
+        Destroy(CanvasManager.instance);
     }
     public void PlayGame()
     {

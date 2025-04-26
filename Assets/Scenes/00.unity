@@ -2869,17 +2869,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &770564358 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 736123862873841985, guid: fde8354cdd2c36443b6837615f6b4477, type: 3}
-  m_PrefabInstance: {fileID: 1858445750553033014}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &788295811
 GameObject:
   m_ObjectHideFlags: 0
@@ -4255,11 +4244,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1131276764 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6333477286312121520, guid: fde8354cdd2c36443b6837615f6b4477, type: 3}
-  m_PrefabInstance: {fileID: 1858445750553033014}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1157243846
 GameObject:
   m_ObjectHideFlags: 0
@@ -7666,9 +7650,12 @@ MonoBehaviour:
   speed: 5
   jumpForce: 500
   health: 100
-  healthBar: {fileID: 770564358}
+  healthBar: {fileID: 0}
   tspmo: {fileID: 2015636714}
-  gameOverScreen: {fileID: 1131276764}
+  gameOverScreen: {fileID: 0}
+  pauseScreen: {fileID: 0}
+  maxJumpHoldTime: 1
+  jumpHoldForce: 6
 --- !u!212 &2015636720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8334,6 +8321,14 @@ PrefabInstance:
     - target: {fileID: 6264022858234552409, guid: fde8354cdd2c36443b6837615f6b4477, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375232201350192287, guid: fde8354cdd2c36443b6837615f6b4477, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375232201350192287, guid: fde8354cdd2c36443b6837615f6b4477, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

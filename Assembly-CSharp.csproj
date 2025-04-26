@@ -63,7 +63,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Save.cs" />
     <Compile Include="Assets\Scripts\click.cs" />
+    <Compile Include="Assets\Scripts\CanvasManager.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Items.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\SceneChanger.cs" />
     <Compile Include="Assets\Scripts\shop.cs" />

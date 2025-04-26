@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour
 
     public void Retry()
     {
-        Player.instance.health = 100;
-        SceneManager.LoadScene(PlayerPrefs.GetInt("CurrentScene"));
+        LoadGame();
     }
 }

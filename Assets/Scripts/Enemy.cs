@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        enemyX += speed;
+        enemyX += speed * Time.deltaTime;
         enemy.transform.position = new Vector2(enemyX, enemy.transform.position.y);
     }
 
@@ -31,6 +31,11 @@ public class Enemy : MonoBehaviour
             Player.instance.TakeDamage(playerDamage);
             Player.instance.transform.position = new Vector2(Player.instance.transform.position.x - 1f, Player.instance.transform.position.y);
         }
+
+      if (collision.gameObject.CompareTag("Ground"))
+         {
+            speed = -speed;
+         }
     }
 
     public void TakeDamage(int damage)

@@ -12,9 +12,14 @@ public class Player : MonoBehaviour
     public Slider healthBar;
     public GameObject tspmo;
     public GameObject gameOverScreen;
-
+    public GameObject pauseScreen;
     private Rigidbody2D rb;
     private Vector3 originalScale;
+    public float maxJumpHoldTime = 1f;
+    public float jumpHoldForce = 6f;
+    private float jumpHoldTimer;
+    private bool isJumping;
+    private bool isPaused = false;
 
 
     private void Awake()
@@ -38,49 +43,68 @@ public class Player : MonoBehaviour
 
         if(GameManager.instance.isLoaded == true)
         {
-            Player.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), 0);
+            instance.transform.position = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), 0);
         }
         
     }
     void Update()
+{
+    if (health <= 0)
+    {
+        Die();
+    }
+
+    if (health > 0 && !isPaused)
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && canMove && isGrounded)
+        {
+            rb.AddForce(new Vector2(0, jumpForce));
+            isJumping = true;
+            jumpHoldTimer = 0f;
+        }
+
+        if (Input.GetKey(KeyCode.Space) && isJumping)
+        {
+            if (jumpHoldTimer < maxJumpHoldTime)
+            {
+                rb.AddForce(new Vector2(0, jumpHoldForce * Time.deltaTime), ForceMode2D.Impulse);
+                jumpHoldTimer += Time.deltaTime;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            isJumping = false;
+        }
+    }
+
+        PauseGame();
+    }
+
+    void FixedUpdate()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
 
-        if(health > 0)
+        if (health > 0 && !isPaused && canMove)
         {
-            if (canMove)
-            {
                 transform.Translate(horizontalInput * speed * Time.deltaTime * Vector3.right);
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            {
-                transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z); // Face left
-            }
-            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            {
-                transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z); // Face right
-            }
+                {
+                    transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z); // left
+                }
+                else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+                {
+                    transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z); // right
+                }
         }
-
-
-            if (Input.GetKeyDown(KeyCode.Space) && canMove && isGrounded)
-            {
-                rb.AddForce(new Vector2(rb.linearVelocity.x, jumpForce));
-            }
-        }
-
-        if (health <= 0)
-        {
-            Die();
-        }
-
     }
-    
+
     void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            isJumping = false;
         }
     }
 
@@ -102,6 +126,7 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
+        Destroy(gameObject);
         canMove = false;
         isGrounded = false;
         gameOverScreen.SetActive(true);
@@ -111,7 +136,17 @@ public class Player : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape)) 
         {
-
+            if (!isPaused)
+            {
+                pauseScreen.SetActive(true);
+                isPaused = true;
+            }
+            else
+            {
+                pauseScreen.SetActive(false);
+                isPaused = false;
+            }
+            
         }
     }
 }
