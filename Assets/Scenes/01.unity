@@ -11317,7 +11317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initial_health: 80
   current_health: 0
-  speed: -0.0001
+  speed: -0.09
   playerDamage: 5
   tspmo: {fileID: 1593054447}
   enemy: {fileID: 1593054452}
